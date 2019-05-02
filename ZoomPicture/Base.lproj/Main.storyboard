@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZoomPicture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mpi-IY-MPF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Goku-dragon-ball-z-35799866-900-733" translatesAutoresizingMaskIntoConstraints="NO" id="14O-D3-ZB3">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="14O-D3-ZB3" firstAttribute="centerY" secondItem="mpi-IY-MPF" secondAttribute="centerY" id="0Yz-FC-QHp"/>
+                                    <constraint firstItem="14O-D3-ZB3" firstAttribute="leading" secondItem="mpi-IY-MPF" secondAttribute="leading" id="Cks-xr-YK0"/>
+                                    <constraint firstItem="14O-D3-ZB3" firstAttribute="centerX" secondItem="mpi-IY-MPF" secondAttribute="centerX" id="KZh-3W-7rq"/>
+                                    <constraint firstAttribute="bottom" secondItem="14O-D3-ZB3" secondAttribute="bottom" id="ZXg-dI-a1M"/>
+                                    <constraint firstAttribute="trailing" secondItem="14O-D3-ZB3" secondAttribute="trailing" id="Zbd-LC-KXb"/>
+                                    <constraint firstItem="14O-D3-ZB3" firstAttribute="top" secondItem="mpi-IY-MPF" secondAttribute="top" id="sQS-dI-P4J"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="8fh-YW-tCf"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mpi-IY-MPF" secondAttribute="bottom" id="8aV-1h-lZg"/>
+                            <constraint firstItem="mpi-IY-MPF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WNr-0F-v3S"/>
+                            <constraint firstItem="mpi-IY-MPF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YoY-BY-qc0"/>
+                            <constraint firstItem="mpi-IY-MPF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xO3-Lz-qQl"/>
+                            <constraint firstItem="mpi-IY-MPF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yIl-ZM-L1n"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="14O-D3-ZB3" id="uXm-bZ-oAR"/>
+                        <outlet property="scrollView" destination="mpi-IY-MPF" id="HH8-JL-Fnf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.61956521739131"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Goku-dragon-ball-z-35799866-900-733" width="900" height="733"/>
+    </resources>
+</document>
